@@ -15,7 +15,13 @@ $resultado_id =  mysqli_query($link, $sqlValidar);
 
 if($resultado_id){
     $dados_usuarios =  mysqli_fetch_array($resultado_id);
-    var_dump($dados_usuarios);
+    //Validando Usuário
+    if(isset($dados_usuarios['usuario'])){
+        echo 'Bem vindo ao Sistema: '.$dados_usuarios['usuario'];
+    }else{
+        header('location: index.php?erro=1');
+    }
+
 } else {
     echo 'Erro na execulção da consulta, favor entrar em contato com o admin do siteclea';
 }
