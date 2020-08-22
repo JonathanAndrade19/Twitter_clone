@@ -17,9 +17,6 @@
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	
-		<script>
-			// código javascript						
-		</script>
 	</head>
 
 	<body>
@@ -91,6 +88,6 @@
 	    </div>
 	
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	
+		<script src="index.js"></script>
 	</body>
 </html>
