@@ -3,7 +3,7 @@
 require_once('dbConnect.php');
 
 $usuario = $_POST['usuario'];
-$senha = $_POST['senha'];
+$senha = md5($_POST['senha']);
 
 //query para validação de usuarios
 $sqlValidar = " SELECT * FROM usuarios WHERE usuario = '$usuario' AND senha = '$senha' ";
