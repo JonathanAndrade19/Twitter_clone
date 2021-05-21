@@ -4,8 +4,8 @@ class db{
     //Variaves que contem dados da conexão com o banco de dados.
     private $host = 'localhost';
     private $usuario = 'root';
-    private $senha = 'root';
-    private $database = 'twitter_clone';
+    private $senha = 'acade123';
+    private $database = 'menew';
 
     public function conecta_mysql(){
         //Criar Conexão com a base de dados.
